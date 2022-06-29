@@ -10,7 +10,7 @@ const AllPhone = () => {
             <marquee behavior="" direction="left" className='text-5xl font-bold text-primary my-10'><i>All Product </i></marquee>
            <div  className='  grid lg:grid-cols-3 md:grid-cols-2 gap-10  '>
            {
-                phones.map((phone,index)=><SinglePhone key={index}  phone={phone}></SinglePhone>)
+                phones.reverse().map((phone,index)=><SinglePhone key={index}  phone={phone}></SinglePhone>)
                 
             }
            </div>
