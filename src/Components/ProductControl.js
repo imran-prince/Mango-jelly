@@ -22,7 +22,7 @@ const ProductControl = () => {
 
                 <tbody>
                     {
-                        phones.map((phone, index) => <UpdateDelete key={index} phone={phone}></UpdateDelete>)
+                        phones.slice(-50).reverse().map((phone, index) => <UpdateDelete key={index} phone={phone}></UpdateDelete>)
 
                     }
 
