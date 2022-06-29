@@ -8,13 +8,13 @@ const SinglePhone = ({ phone }) => {
     return (
         <>
             
-            <div class="card w-96 bg-base-100 shadow-xl" >
+            <div className="card w-96 bg-base-100 shadow-xl" >
                 <figure><img src={image} alt="Phone" /></figure>
-                <div class="card-body">
-                    <h2 class="card-title">Brand-Name: {brand}</h2>
+                <div className="card-body">
+                    <h2 className="card-title">Brand-Name: {brand}</h2>
                     <p>Name: {phone_name}</p>
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-primary" onClick={()=>navigate(`/details/${_id}`)}>Detaisl</button>
+                    <div className="card-actions justify-end">
+                        <button className="btn btn-primary" onClick={()=>navigate(`/details/${_id}`)}>Detaisl</button>
                     </div>
                 </div>
             </div>

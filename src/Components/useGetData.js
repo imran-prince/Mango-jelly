@@ -6,8 +6,8 @@ const useGetData = () => {
         fetch(`http://localhost:5000/products`)
         .then(rs=>rs.json())
         .then(data=>setPhones(data))
-    },[])
-    return [phones]
+    },[phones])
+    return [phones,setPhones]
          
    
 }
